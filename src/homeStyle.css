@@ -1,0 +1,140 @@
+#homeBody {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100vw;
+    position: relative;
+}
+
+#homeTitle {
+    text-align: center;
+    font-weight: 600;
+    font-size: 35px;
+    color: white;
+    font-family: 'Figtree', sans-serif;
+    margin-top: 35px;
+}
+
+#homeSub {
+    color: gray;
+    font-family: 'Figtree', sans-serif;
+    text-align: center;
+}
+
+#moviePosterOuterFlex {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#moviePosterFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    width: 100vw;
+    margin-left: 100px;
+    margin-top: 30px;
+    /* background-color: red; */
+}
+
+.moviePoster {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    margin-left: -100px;
+}
+
+#poster1 {
+    rotate: -10deg;
+    transform: scale(95%);
+    margin-top: 20px;
+}
+
+#poster2 {
+    z-index: 4;
+}
+
+#poster3 {
+    rotate: 10deg;
+    transform: scale(95%);
+    margin-top: 20px;
+}
+
+#bodyFlex {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#bodyInner {
+    max-width: 800px;
+    width: 95vw;
+    position: relative;
+}
+
+#iframeBorder {
+    width: 100%;
+    height: 50vh;
+    border: solid 2px var(--subOrange);
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 20px;
+}
+
+#movieFrame {
+    width: 100%;
+    height: 100%;
+}
+
+#movieTitle {
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+    width: calc(100% - 2.5px);
+    padding-left: 5px;
+}
+
+#movieDescription {
+    color: white;
+    margin-top: 5px;
+    width: calc(100% - 2.5px);
+    padding-left: 5px;
+}
+
+#genMovieBtnFlex {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding-bottom: 40px;
+}
+
+#genMovieBtn {
+    max-width: 800px;
+    width: 95vw;
+    height: 42px;
+    border-radius: 4px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: var(--subOrange);
+    color: var(--orange);
+}
+
+@media only screen and (max-width: 550px) {
+    #iframeBorder {
+        height: 30vh;
+    }
+
+    #homeTitle {
+        font-size: 28px;
+    }
+}
