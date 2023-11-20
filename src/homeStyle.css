@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     position: relative;
 }
@@ -137,14 +137,4 @@
     #homeTitle {
         font-size: 28px;
     }
-}
-
-#screenshotTitle1 {
-    color: white;
-}
-#screenshotTitle {
-    color: var(--background);
-    font-weight: bold;
-    font-size: 26px;
-    width: 400px;
 }
