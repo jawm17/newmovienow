@@ -90,6 +90,15 @@ export default function Home() {
                 </div>
             </div>
             </div>
+
+            {/*     <div>
+                <div id="screenshotTitle1">
+                    New Movie Now!
+                </div>
+                <div id="screenshotTitle">
+                    Find a new movie every night!
+                </div>
+            </div> */}
         </div>
     );
 }
