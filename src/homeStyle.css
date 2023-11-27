@@ -91,10 +91,40 @@
     height: 100%;
 }
 
+
+#movieInfoFlex {
+    display: flex;
+    margin-top: 15px;
+    /* align-items: center; */
+}
+
+#moviePoster {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#playIcon {
+    position: absolute;
+    z-index: 2;
+    border-radius: 50%;
+    height: 45px;
+    background-color: #0C0C0E;
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
 #movieTitle {
     color: white;
     font-weight: bold;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     width: calc(100% - 2.5px);
     padding-left: 5px;
 }
@@ -112,7 +142,7 @@
     align-items: center;
     justify-content: center;
     margin-top: 20px;
-    padding-bottom: 40px;
+    /* padding-bottom: 40px; */
 }
 
 #genMovieBtn {
@@ -129,6 +159,66 @@
     color: var(--orange);
 }
 
+
+#orFlex {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#orLabel {
+    color: var(--orange);
+}
+
+.orLine {
+    border-bottom: solid 2px var(--subOrange);
+    width: 45%;
+}
+
+/* textarea,
+input {
+    outline: none;
+    box-shadow: none !important;
+}
+
+input:focus {
+    outline: none;
+
+}
+
+input {
+    all: unset;
+} */
+
+#searchFlex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+#searchBtn {
+    width: 120px;
+    height: 36px;
+    border-radius: 4px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: var(--subOrange);
+    color: var(--orange);
+}
+
+#movieSearchBar {
+    height: 28px;
+    width: calc(100% - 120px);
+    /* background-color: gray; */
+}
+
 @media only screen and (max-width: 550px) {
     #iframeBorder {
         height: 30vh;
@@ -137,4 +227,18 @@
     #homeTitle {
         font-size: 28px;
     }
+
+    #movieInfoFlex {
+        display: block;
+        margin-top: 15px;
+    }
+    
+    #moviePoster {
+        /* height: 200px; */
+        width: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+        margin-right: 10px;
+    }
+    
 }
